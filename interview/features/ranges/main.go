@@ -24,6 +24,7 @@ func deleteInForRange() {
 	for k := range m { // map 的遍历时无序的
 		if k == 1 {
 			fmt.Println("Delete key: ", k)
+			// delete方法只能作用在map上
 			delete(m, k)
 			if _, ok := m[k]; ok {
 				fmt.Println("Should not be ok!")
